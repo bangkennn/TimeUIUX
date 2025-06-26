@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  background: #f8f6f2;
+  color: #3e2723;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff8f0;
+  box-shadow: 0 2px 8px rgba(62,39,34,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a67c52;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #3e2723;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-menu li a:hover {
+  color: #a67c52;
+}
+
+.hero-section {
+  background: #fff;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
+  position: relative;
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  text-align: left;
+  color: #3e2723;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  color: #3e2723;
+}
+
+.typing-animation {
+  font-size: 1.2rem;
+  color: #a67c52;
+  min-height: 2.2em;
+  letter-spacing: 1px;
+  /* border-right: 2px solid #a67c52; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: blink-caret 0.7s step-end infinite; */
+  margin-top: 0.5rem;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.hero-image img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #fff8f0;
+  object-fit: cover;
+}
+
+.studies-section {
+  padding: 5rem 2rem 3rem 2rem;
+  background: #fff8f0;
+  min-height: 70vh;
+  box-shadow: 0 -2px 16px rgba(166,124,82,0.04);
+}
+
+.studies-section h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #a67c52;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.module-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.module {
+  background: linear-gradient(120deg, #fff 0%, #f8f6f2 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(166,124,82,0.08);
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  min-width: 260px;
+  flex: 1 1 260px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: #3e2723;
+}
+.module:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(166,124,82,0.15);
+}
+.module h2 {
+  color: #a67c52;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+.module p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.module a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #a67c52;
+  color: #fff;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.module a:hover {
+  background: #3e2723;
+}
+
+.footer {
+  background: #a67c52;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .module-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .studies-section {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hero-image {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: left;
+  }
+}
