@@ -1,8 +1,6 @@
 // Animasi mengetik
 const typingTexts = [
-  'UI/UX bukan hanya tentang tampilan, tapi juga pengalaman.',
-  'Desain yang baik adalah desain yang sederhana dan mudah digunakan.',
-  'Jadilah kreatif, jadilah inovatif, jadilah UI/UX designer!'
+  'Welcome to UI/UX Club Time Multismart.',
 ];
 let typingIndex = 0;
 let charIndex = 0;
